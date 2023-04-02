@@ -3,7 +3,8 @@ import java.awt.event.*;
 import java.awt.*;
 
 public class Bienvenida extends JFrame implements ActionListener { // Se implementa ActionListener en vez de AWTEventListener
-  private JTextField textField1 , textField2;
+  private  JTextField textField1;
+  private JPasswordField textField2;
   private JLabel label, label2, label3, label4, label5;
   private JButton button1;
 
@@ -25,7 +26,7 @@ public class Bienvenida extends JFrame implements ActionListener { // Se impleme
     label2.setForeground(new Color(255,255,255,255));
 
     label3 = new JLabel("Ingrese su ID");
-    label3.setBounds(45,170,200,30);
+    label3.setBounds(45,160,200,30);
     label3.setFont(new Font("Andale Mono", 3, 18));
     label3.setForeground(new Color(255,255,255,255));
 
@@ -35,24 +36,24 @@ public class Bienvenida extends JFrame implements ActionListener { // Se impleme
     label4.setForeground(new Color(255,255,255,255));
 
     textField1 = new JTextField();
-    textField1.setBounds(45,210,255,25);
+    textField1.setBounds(45,200,255,25);
     textField1.setBackground(new Color(224,224,224));
     textField1.setFont(new Font("Andale Mono", 1, 14)); // Se corrige el uso de label4 en vez de textField1
     textField1.setForeground(new Color(0, 0, 0)); // Se cambia el color del texto a rojo
 
     label5 = new JLabel("Ingrese su Password");
-    label5.setBounds(45,240,200,30);
+    label5.setBounds(45,230,200,30);
     label5.setFont(new Font("Andale Mono", 3, 18));
     label5.setForeground(new Color(255,255,255,255));
 
-    textField2 = new JTextField();
-    textField2.setBounds(45,280,255,25);
+    textField2 = new  JPasswordField();
+    textField2.setBounds(45,270,255,25);
     textField2.setBackground(new Color(224,224,224));
     textField2.setFont(new Font("Andale Mono", 1, 14)); // Se corrige el uso de label4 en vez de textField1
     textField2.setForeground(new Color(0, 0, 0)); // Se cambia el color del texto a rojo
 
     button1 = new JButton("Loggin");
-    button1.setBounds(125,320,100,30);
+    button1.setBounds(125,310,100,30);
     button1.setFont(new Font("Andale Mono", 3, 16));
     button1.setForeground(new Color(0, 0, 0));
     button1.addActionListener(this); // Se agrega el action listener al botón
